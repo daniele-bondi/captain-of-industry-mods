@@ -2,4 +2,5 @@
   <Project Path="projects/Carbon.COI.IgnorePillars/Carbon.COI.IgnorePillars.csproj" />
   <Project Path="projects/Carbon.COI.KeepMinizippers/Carbon.COI.KeepMinizippers.csproj" />
   <Project Path="projects/Carbon.COI.QuickBuildUnlocked/Carbon.COI.QuickBuildUnlocked.csproj" />
+  <Project Path="projects/Carbon.COI.ShowTerrainGrid/Carbon.COI.ShowTerrainGrid.csproj" />
 </Solution>
