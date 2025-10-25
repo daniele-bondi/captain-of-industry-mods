@@ -1,0 +1,33 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <!-- Root directory of the repository, without trailing directory separator. -->
+    <MyRepoRoot>$(MSBuildThisFileDirectory.TrimEnd('\'))</MyRepoRoot>
+
+    <!-- Directory where all project subdirectories are located. -->
+    <MyProjectsDirectory>$(MyRepoRoot)\projects</MyProjectsDirectory>
+
+    <!-- The CoI modding docs say to set this using an environment variable. I use a symlink instead, and ignore it in git. -->
+    <!-- Either set the env var like the docs say, or create a symlink with this name that points to your CoI installation. -->
+    <COI_ROOT Condition="$(COI_ROOT) == ''">$(MyRepoRoot)\.COI_ROOT</COI_ROOT>
+
+    <!-- Same as COI_ROOT, but this points to the user-specific mods directory, which should be "%APPDATA%\Captain of Industry\Mods". -->
+    <!-- Used to add references to other mods (e.g. COIExtented.Core). -->
+    <COI_MODS Condition="$(COI_MODS) == ''">$(MyRepoRoot)\.COI_MODS</COI_MODS>
+  </PropertyGroup>
+
+
+  <PropertyGroup>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+
+
+  <PropertyGroup>
+    <UseArtifactsOutput>true</UseArtifactsOutput>
+    <ArtifactsPath>$(MyRepoRoot)\artifacts</ArtifactsPath>
+    <PublishRelease>true</PublishRelease>
+  </PropertyGroup>
+
+</Project>
