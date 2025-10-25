@@ -1,0 +1,35 @@
+## IDE stuff.
+**/.vs/
+**/.vscode/
+
+**/*.csproj.user
+**/*.vbproj.user
+**/*.suo
+
+
+
+
+## Build output.
+**/.artifacts/
+**/artifacts/
+**/bin/
+**/obj/
+**/package/
+**/pkg/
+**/publish/
+
+**/*.nupkg
+**/*.snupkg
+
+
+
+
+## MacOS garbage.
+**/.DS_Store
+**/.Spotlight-V100
+**/.Trashes
+
+## Windows garbage.
+**/Thumbs.db
+**/[Dd]esktop.ini
+**/*.lnk
