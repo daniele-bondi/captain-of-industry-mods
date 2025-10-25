@@ -54,7 +54,7 @@ internal class ShowTerrainGridToolController : IToolbarItemController
 
     private static KeyBindings GetShortcut(ShortcutsManager shortcutsManager)
     {
-        return KeyBindings.FromPrimaryKeys(KbCategory.Tools, ShortcutMode.Game, UnityEngine.KeyCode.LeftAlt, UnityEngine.KeyCode.Z);
+        return KeyBindings.FromPrimaryKeys(KbCategory.Tools, ShortcutMode.Game, UnityEngine.KeyCode.LeftAlt, UnityEngine.KeyCode.G);
     }
 
 
